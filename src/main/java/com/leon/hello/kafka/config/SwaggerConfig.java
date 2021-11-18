@@ -28,7 +28,7 @@ public class SwaggerConfig {
                 .pathMapping("/")
                 .select()
                 .apis(RequestHandlerSelectors.any())
-                .apis(RequestHandlerSelectors.basePackage("com.zjy.kafka.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.leon.hello.kafka.controller"))
                 .build();
     }
 

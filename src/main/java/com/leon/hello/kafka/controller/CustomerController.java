@@ -22,8 +22,7 @@ public class CustomerController {
      *
      * @param record
      */
-    @KafkaListener(topics = "demo")
-//    @KafkaListener(topics = "topic-first")
+    @KafkaListener(topics = "topic-first")
     public void listen(ConsumerRecord<?, ?> record) {
         log.info("topic是: {}, offset是: {}, value是: {}", record.topic(), record.offset(), record.value());
     }
